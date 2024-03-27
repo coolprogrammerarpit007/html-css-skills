@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* When your element shifts from 1 particular style to another style is called animation */
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: salmon;
+  border: 5px solid black;
+}
+
+.box {
+  background-color: blue;
+  width: 350px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+  border: 2px solid greenyellow;
+  animation-name: movement;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes movement {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 0px;
+    left: 800px;
+  }
+}
